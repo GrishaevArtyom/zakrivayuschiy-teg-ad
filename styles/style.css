@@ -16,8 +16,6 @@
   margin-inline: auto;
 }
 
-/* Кнопки */
-
 .button {
   position: relative;
   z-index: 2;
@@ -58,8 +56,6 @@
   translate: 0;
 }
 
-/* Сердечки */
-
 .like-icon .contour {
   fill: var(--heart-contour-color);
   transition: fill 0.3s;
@@ -83,8 +79,6 @@
   fill: var(--heart-sparks-color);
 }
 
-/* :hover */
-
 .like-icon:hover .core {
   fill: var(--heart-contour-color);
   transition-delay: 0s;
@@ -95,8 +89,6 @@
   transition-delay: 0.05s;
 }
 
-/* :active */
-
 .like-icon:active .core {
   fill: var(--heart-fill-color);
   transition-delay: 0s;
@@ -106,8 +98,6 @@
   fill: var(--heart-main-body-color);
   transition-delay: 0.05s;
 }
-
-/* Лайк поставлен */
 
 .like-icon.is-liked .heart {
   transform-origin: center;
@@ -132,8 +122,6 @@
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s 0.3s ease-in;
 }
-
-/* Основные стили */
 
 .page {
   color: var(--color-accent);
@@ -175,8 +163,6 @@
   margin-block-start: 50px;
 }
 
-/* Фильтры */
-
 .main__card:nth-child(2) .card__image-item {
   filter: sepia(1);
 }
@@ -205,8 +191,6 @@
   filter: brightness(2) contrast(5);
 }
 
-/* Карточки */
-
 .card__title {
   border: 1px solid var(--border-color);
   padding: 5px 10px;
@@ -234,8 +218,10 @@
   line-height: 1.25;
   text-align: end;
 
-  text-shadow: 0 1px 1px var(--label-border-color),
-    1px 0 1px var(--label-border-color), 0 -1px 1px var(--label-border-color),
+  text-shadow:
+    0 1px 1px var(--label-border-color),
+    1px 0 1px var(--label-border-color),
+    0 -1px 1px var(--label-border-color),
     -1px 0 1px var(--label-border-color);
   text-wrap: balance;
 }
@@ -295,8 +281,6 @@
   font-size: 14px;
   line-height: 0.9;
 }
-
-/* Сохранить на память? */
 
 .main__save-button > svg {
   width: 21px;
